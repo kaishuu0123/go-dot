@@ -1,5 +1,6 @@
 package main
 
+// #cgo CFLAGS: -DDOT_ONLY=1
 // #cgo pkg-config: libgvc libcgraph libcdt libpng
 // #cgo LDFLAGS: -lgvc -lcgraph -lcdt -lpng
 // #include <gvc.h>
