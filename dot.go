@@ -1,6 +1,7 @@
 package main
 
 // #cgo pkg-config: libgvc libcgraph libcdt libpng
+// #cgo LDFLAGS: -lgvc -lcgraph -lcdt -lpng
 // #include <gvc.h>
 // #include <gvcext.h>
 // #include <time.h>
@@ -13,7 +14,7 @@ import "os"
 
 func main() {
   gvc := C.gvContext()
-  // C.GvExitOnUsage = 1;
+  //C.GvExitOnUsage = C.int(1);
   argc := C.int(len(os.Args))
   argv := make([]*C.char, argc)
   for i, arg := range os.Args {
