@@ -29,7 +29,7 @@ $ go-dot -Tpng sample.dot -o sample.png
 ```
 
 * output png preview
-![sample.png](https://github.com/kaishuu0123/go-dot/examples/sample.png)
+![sample.png](https://github.com/kaishuu0123/go-dot/blob/master/examples/sample.png)
 
 ## DEMO
 
